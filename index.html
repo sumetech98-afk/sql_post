@@ -1,0 +1,770 @@
+<!-- ===== SQL FOR BEGINNERS BOOK POST - CYBERSUME FULL SCREEN BLACK EDITION ===== -->
+<!-- Isko Blogger Post Editor mein HTML mode mein paste karein -->
+
+<style>
+    /* ===== FULL SCREEN WRAPPER ===== */
+    .cyber-post-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 30px 40px 50px !important;
+        background: #000000 !important;
+        color: #ffffff;
+        border-radius: 0 !important;
+        box-sizing: border-box;
+    }
+    
+    /* ===== RESPONSIVE FULL SCREEN MARGINS ===== */
+    @media (max-width: 1200px) {
+        .cyber-post-wrapper {
+            padding: 25px 35px 45px !important;
+        }
+    }
+    
+    @media (max-width: 992px) {
+        .cyber-post-wrapper {
+            padding: 22px 30px 40px !important;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .cyber-post-wrapper {
+            padding: 18px 22px 35px !important;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .cyber-post-wrapper {
+            padding: 15px 18px 30px !important;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .cyber-post-wrapper {
+            padding: 12px 14px 25px !important;
+        }
+    }
+    
+    /* ===== CONTENT MAX WIDTH ===== */
+    .cyber-content {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    /* ===== POST HEADER ===== */
+    .post-header-cyber {
+        margin-bottom: 35px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid rgba(0, 255, 136, 0.08);
+        background: transparent;
+    }
+    
+    .post-badge {
+        display: inline-block;
+        padding: 6px 26px;
+        background: rgba(0, 255, 136, 0.08);
+        border: 1px solid #00ff88;
+        border-radius: 50px;
+        color: #00ff88;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+    
+    .post-title-cyber {
+        font-size: 42px;
+        font-weight: 900;
+        line-height: 1.15;
+        color: #ffffff !important;
+        margin: 12px 0 18px;
+        letter-spacing: -0.5px;
+    }
+    
+    .post-title-cyber strong {
+        color: #00ff88;
+    }
+    
+    @media (max-width: 992px) {
+        .post-title-cyber {
+            font-size: 34px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .post-title-cyber {
+            font-size: 28px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .post-title-cyber {
+            font-size: 24px;
+        }
+    }
+    
+    /* ===== FEATURED BOX ===== */
+    .featured-box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 35px;
+        background: #0a0a0a !important;
+        border: 1px solid rgba(0, 255, 136, 0.12);
+        border-radius: 18px;
+        padding: 32px 38px;
+        margin: 25px 0 38px;
+        justify-content: center;
+    }
+    
+    @media (max-width: 768px) {
+        .featured-box {
+            flex-direction: column;
+            text-align: center;
+            padding: 25px 22px;
+            gap: 22px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .featured-box {
+            padding: 20px 16px;
+        }
+    }
+    
+    .featured-image {
+        flex-shrink: 0;
+    }
+    
+    .featured-image img {
+        max-width: 220px;
+        height: auto;
+        border-radius: 14px;
+        border: 2px solid #00ff88;
+        transition: 0.3s;
+        background: #000000;
+    }
+    
+    .featured-image img:first-child {
+        max-width: 200px;
+    }
+    
+    .featured-image .download-btn-img {
+        max-width: 280px !important;
+        margin-top: 10px;
+        border: none !important;
+        border-radius: 10px !important;
+        transition: 0.3s;
+    }
+    
+    .featured-image .download-btn-img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 30px rgba(0, 255, 136, 0.15);
+    }
+    
+    @media (max-width: 768px) {
+        .featured-image img {
+            max-width: 180px;
+        }
+        .featured-image .download-btn-img {
+            max-width: 240px !important;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .featured-image img {
+            max-width: 150px;
+        }
+        .featured-image .download-btn-img {
+            max-width: 200px !important;
+        }
+    }
+    
+    .featured-image img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 40px rgba(0, 255, 136, 0.15);
+    }
+    
+    .featured-cta {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .featured-cta p {
+        color: #b0b8c8 !important;
+        margin: 5px 0 12px !important;
+        font-size: 16px;
+    }
+    
+    .featured-cta .main-link {
+        display: inline-block;
+        padding: 15px 42px;
+        background: linear-gradient(135deg, #00ff88, #00cc77);
+        color: #000000 !important;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 16px;
+        text-decoration: none;
+        margin-top: 6px;
+        transition: all 0.3s ease;
+        letter-spacing: 0.5px;
+    }
+    
+    .featured-cta .main-link:hover {
+        transform: scale(1.04);
+        box-shadow: 0 0 35px rgba(0, 255, 136, 0.25);
+    }
+    
+    .featured-cta .small-note {
+        color: #6a7290 !important;
+        font-size: 13px;
+        margin-top: 12px !important;
+    }
+    
+    .image-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .price-tag {
+        display: inline-block;
+        padding: 4px 18px;
+        background: rgba(255, 204, 0, 0.1);
+        border: 1px solid #ffcc00;
+        border-radius: 50px;
+        color: #ffcc00;
+        font-size: 14px;
+        font-weight: 700;
+        margin-top: 5px;
+    }
+    
+    /* ===== HEADINGS ===== */
+    .cyber-post-wrapper h2 {
+        color: #ffffff !important;
+        font-size: 28px;
+        font-weight: 800;
+        margin-top: 40px;
+        margin-bottom: 18px;
+        border-left: 5px solid #00ff88;
+        padding-left: 20px;
+        line-height: 1.3;
+    }
+    
+    .cyber-post-wrapper h2#what {
+        border-left-color: #ffcc00;
+    }
+    
+    .cyber-post-wrapper h2#unlock {
+        border-left-color: #00d9ff;
+    }
+    
+    @media (max-width: 992px) {
+        .cyber-post-wrapper h2 {
+            font-size: 26px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .cyber-post-wrapper h2 {
+            font-size: 24px;
+            padding-left: 16px;
+            margin-top: 35px;
+            margin-bottom: 16px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .cyber-post-wrapper h2 {
+            font-size: 20px;
+            padding-left: 14px;
+            margin-top: 28px;
+            margin-bottom: 14px;
+        }
+    }
+    
+    /* ===== PARAGRAPHS ===== */
+    .cyber-post-wrapper p {
+        color: #b0b8c8 !important;
+        font-size: 17px;
+        line-height: 1.95;
+        margin: 16px 0 20px;
+    }
+    
+    .cyber-post-wrapper p strong {
+        color: #00ff88;
+    }
+    
+    @media (max-width: 768px) {
+        .cyber-post-wrapper p {
+            font-size: 16px;
+            line-height: 1.85;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .cyber-post-wrapper p {
+            font-size: 15px;
+            line-height: 1.8;
+            margin: 14px 0 16px;
+        }
+    }
+    
+    /* ===== LISTS ===== */
+    .cyber-post-wrapper ul,
+    .cyber-post-wrapper ol {
+        color: #b0b8c8 !important;
+        font-size: 17px;
+        line-height: 2.3;
+        padding-left: 0;
+        margin: 14px 0 22px;
+        list-style: none;
+    }
+    
+    .cyber-post-wrapper ul li,
+    .cyber-post-wrapper ol li {
+        color: #b0b8c8 !important;
+        margin-bottom: 4px;
+        padding-left: 28px;
+        position: relative;
+    }
+    
+    .cyber-post-wrapper ul li::before {
+        content: "▸";
+        color: #00ff88;
+        position: absolute;
+        left: 0;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    
+    .cyber-post-wrapper ol {
+        list-style: none;
+        counter-reset: item;
+    }
+    
+    .cyber-post-wrapper ol li {
+        counter-increment: item;
+        padding-left: 35px;
+    }
+    
+    .cyber-post-wrapper ol li::before {
+        content: counter(item) ".";
+        color: #00ff88;
+        position: absolute;
+        left: 0;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    
+    @media (max-width: 480px) {
+        .cyber-post-wrapper ul,
+        .cyber-post-wrapper ol {
+            font-size: 15px;
+            line-height: 2.1;
+        }
+        .cyber-post-wrapper ul li,
+        .cyber-post-wrapper ol li {
+            padding-left: 24px;
+        }
+        .cyber-post-wrapper ol li {
+            padding-left: 30px;
+        }
+    }
+    
+    /* ===== TWO COLUMN LIST ===== */
+    .two-col-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4px 40px;
+        padding-left: 0 !important;
+        list-style: none !important;
+        margin: 14px 0 22px;
+    }
+    
+    .two-col-list li {
+        color: #b0b8c8 !important;
+        font-size: 16.5px;
+        line-height: 2.2;
+        padding: 4px 0;
+        padding-left: 28px;
+        position: relative;
+    }
+    
+    .two-col-list li::before {
+        content: "▸";
+        color: #00ff88;
+        position: absolute;
+        left: 0;
+        font-weight: 700;
+    }
+    
+    @media (max-width: 768px) {
+        .two-col-list {
+            grid-template-columns: 1fr 1fr;
+            gap: 2px 20px;
+        }
+        .two-col-list li {
+            font-size: 15px;
+            padding-left: 24px;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .two-col-list {
+            grid-template-columns: 1fr;
+            gap: 2px;
+        }
+        .two-col-list li {
+            font-size: 15px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .two-col-list li {
+            font-size: 14px;
+        }
+    }
+    
+    /* ===== HORIZONTAL RULE ===== */
+    .cyber-post-wrapper hr {
+        border: none;
+        border-top: 1px solid rgba(0, 255, 136, 0.06);
+        margin: 30px 0 32px;
+        background: transparent;
+        height: 1px;
+    }
+    
+    /* ===== SHARE SECTION ===== */
+    .share-section {
+        margin-top: 50px;
+        padding-top: 30px;
+        border-top: 1px solid rgba(0, 255, 136, 0.08);
+    }
+    
+    .share-section p {
+        color: #6a7290 !important;
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 16px !important;
+    }
+    
+    .share-buttons {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .share-buttons a {
+        padding: 12px 28px;
+        border: 1px solid rgba(0, 255, 136, 0.12);
+        border-radius: 10px;
+        color: #b0b8c8 !important;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        transition: 0.3s;
+        background: transparent;
+    }
+    
+    .share-buttons a:hover {
+        border-color: #00ff88;
+        color: #00ff88 !important;
+        background: rgba(0, 255, 136, 0.04);
+        transform: translateY(-2px);
+    }
+    
+    @media (max-width: 480px) {
+        .share-buttons a {
+            padding: 10px 18px;
+            font-size: 13px;
+        }
+        .share-section {
+            margin-top: 35px;
+            padding-top: 22px;
+        }
+    }
+    
+    /* ===== BOOK HIGHLIGHT BOX ===== */
+    .book-highlight {
+        background: linear-gradient(135deg, rgba(0, 255, 136, 0.05), rgba(0, 217, 255, 0.05));
+        border: 1px solid rgba(0, 255, 136, 0.1);
+        border-radius: 14px;
+        padding: 24px 30px;
+        margin: 20px 0 25px;
+        text-align: center;
+    }
+    
+    .book-highlight p {
+        margin: 5px 0 !important;
+        font-size: 16px;
+    }
+    
+    .book-highlight .highlight-title {
+        color: #00ff88;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    
+    @media (max-width: 480px) {
+        .book-highlight {
+            padding: 18px 16px;
+        }
+        .book-highlight p {
+            font-size: 14px;
+        }
+        .book-highlight .highlight-title {
+            font-size: 16px;
+        }
+    }
+    
+    /* ===== DATA POWER BOX ===== */
+    .data-power-box {
+        background: rgba(0, 217, 255, 0.03);
+        border: 1px solid rgba(0, 217, 255, 0.1);
+        border-radius: 14px;
+        padding: 20px 28px;
+        margin: 20px 0 25px;
+        text-align: center;
+    }
+    
+    .data-power-box .big-text {
+        color: #00d9ff;
+        font-weight: 900;
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+    
+    .data-power-box p {
+        margin: 5px 0 !important;
+        font-size: 15px;
+    }
+    
+    @media (max-width: 480px) {
+        .data-power-box {
+            padding: 16px 16px;
+        }
+        .data-power-box .big-text {
+            font-size: 17px;
+        }
+        .data-power-box p {
+            font-size: 14px;
+        }
+    }
+    
+    /* ===== BLOGGER OVERRIDES ===== */
+    .blog-posts {
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+    
+    .post-body {
+        padding: 0 !important;
+        background: #000000 !important;
+    }
+    
+    .post-body-content {
+        background: #000000 !important;
+        padding: 0 !important;
+    }
+    
+    .post-outer {
+        background: #000000 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    
+    .post {
+        background: #000000 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    
+    /* ===== INLINE CODE ===== */
+    .cyber-post-wrapper code {
+        background: #0a0a0a;
+        padding: 2px 12px;
+        border-radius: 4px;
+        color: #00ff88;
+        border: 1px solid rgba(0, 255, 136, 0.08);
+        font-size: 14.5px;
+        font-family: 'Courier New', monospace;
+    }
+    
+    @media (max-width: 480px) {
+        .cyber-post-wrapper code {
+            font-size: 13px;
+            padding: 1px 8px;
+        }
+    }
+    
+    /* ===== IMAGES ===== */
+    .cyber-post-wrapper img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        margin: 10px 0;
+        border: 1px solid rgba(0, 255, 136, 0.05);
+    }
+    
+    .separator {
+        clear: both;
+        text-align: center;
+    }
+    
+    /* ===== LINK STYLES ===== */
+    .cyber-post-wrapper a {
+        color: #00ff88;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    
+    .cyber-post-wrapper a:hover {
+        color: #00d9ff;
+        text-decoration: underline;
+    }
+</style>
+
+<!-- ===== MAIN CONTENT ===== -->
+<div class="cyber-post-wrapper">
+
+    <div class="cyber-content">
+
+        <!-- ===== POST HEADER ===== -->
+        <div class="post-header-cyber">
+            <div class="post-badge">🗄️ Data Guide</div>
+            <h1 class="post-title-cyber">SQL for Beginners</h1>
+        </div>
+
+        <!-- ===== INTRODUCTION ===== -->
+        <p>
+            Master SQL with a practical, hands-on approach designed for complete beginners and aspiring professionals.
+        </p>
+        <p>
+            Whether you're a student, programmer, business analyst, or someone looking to start a career in data, this book will teach you the essential SQL skills needed to work confidently with relational databases.
+        </p>
+        <p>
+            Starting with the fundamentals and progressing to advanced querying techniques, you'll learn how to retrieve, filter, sort, update, and analyze data using real-world examples and practical exercises.
+        </p>
+
+        <!-- ===== DATA POWER BOX ===== -->
+        <div class="data-power-box">
+            <p class="big-text">📊 Unlock the Power of Data</p>
+            <p style="color:#b0b8c8;">
+                SQL is the <strong style="color:#00d9ff;">#1 skill</strong> for data-driven careers — Start your journey today!
+            </p>
+        </div>
+
+        <!-- ===== FEATURED IMAGES WITH AMAZON LINK ===== -->
+        <div class="featured-box">
+            <div class="featured-image">
+                <div class="image-group">
+                    <a href="https://www.amazon.com/dp/B0H8M9QQ6M" target="_blank" rel="noopener">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj69hZ07-4A4GXZiKxCmnXE3QRQG7csu4Jk8LkcsouurBdkrEwfkLih9ZncmjpTopTxRe6ahGLPtsOx8SlnQs8-Wvogz9nxjMu0-fie1o3AJ1sJPMuOsv6kdFlGl83vkCOqR9LVBk-c8WvM3foRcCiOPCMrNB7iUvAOAOf8hjcqtDMXRPnydzvMD1F2Wiu_/s320/SQL.png" 
+                             alt="SQL for Beginners Book"/>
+                    </a>
+                    <span class="price-tag">💰 ₹300 Only</span>
+                    <a href="https://www.amazon.com/dp/B0H8M9QQ6M" target="_blank" rel="noopener">
+                       
+                    </a>
+                </div>
+            </div>
+            <div class="featured-cta">
+                <p>📚 <strong style="color:#00ff88;">Get Your Copy Today!</strong></p>
+                <a class="main-link" href="https://www.amazon.com/dp/B0H8M9QQ6M" target="_blank" rel="noopener">
+                    🛒 Buy Now on Amazon
+                </a>
+                <p class="small-note"></p>
+                <p style="color:#6a7290;font-size:13px;margin-top:8px;">
+                    <strong style="color:#ffcc00;"></strong>
+                </p>
+            </div>
+        </div>
+
+        <!-- ===== WHAT'S INSIDE ===== -->
+        <h2 id="what">📖 What's Inside This Book</h2>
+        <p>
+            <strong>Inside this book, you'll discover:</strong>
+        </p>
+        <ul class="two-col-list">
+            <li>SQL fundamentals explained in simple language</li>
+            <li>Creating and managing databases and tables</li>
+            <li>Selecting, filtering, sorting, and grouping data</li>
+            <li>Working with aggregate functions</li>
+            <li>Mastering INNER, LEFT, RIGHT, and FULL JOINs</li>
+            <li>Writing nested queries and subqueries</li>
+            <li>Using views, indexes, and constraints</li>
+            <li>Modifying data with INSERT, UPDATE, and DELETE</li>
+            <li>Database normalization and best practices</li>
+            <li>Practical projects to reinforce your learning</li>
+            <li>Interview questions and SQL challenges</li>
+            <li>Tips for writing efficient and optimized SQL queries</li>
+        </ul>
+
+        <!-- ===== BOOK HIGHLIGHT ===== -->
+        <div class="book-highlight">
+            <p class="highlight-title">⭐ From Zero to SQL Hero</p>
+            <p style="color:#b0b8c8;">
+                No prior database experience required — Start from the basics and build real-world data skills!
+            </p>
+        </div>
+
+        <!-- ===== WHAT YOU'LL ACHIEVE ===== -->
+        <h2 id="unlock">🎯 What You'll Achieve</h2>
+        <p>
+            By the end of this book, you'll be able to design databases, write professional SQL queries, analyze data efficiently, and build a strong foundation for careers in:
+        </p>
+        <ul>
+            <li>Software Development</li>
+            <li>Data Analytics</li>
+            <li>Business Intelligence</li>
+            <li>Database Administration</li>
+        </ul>
+        <p>
+            Whether you're preparing for job interviews, college coursework, or real-world projects, this comprehensive guide provides the knowledge and confidence you need to succeed.
+        </p>
+
+        <!-- ===== FINAL CTA ===== -->
+        <div class="book-highlight" style="border-color:#ffcc00;background:linear-gradient(135deg,rgba(255,204,0,0.05),rgba(0,255,136,0.05));">
+            <p class="highlight-title" style="color:#ffcc00;">🚀 Start Your SQL Learning Journey Today!</p>
+            <p style="color:#b0b8c8;font-size:16px;">
+                Unlock the power of data and take your career to the next level.
+            </p>
+            <br/>
+            <a class="main-link" href="https://www.amazon.com/dp/B0H8M9QQ6M" target="_blank" rel="noopener" 
+               style="display:inline-block;padding:15px 42px;background:linear-gradient(135deg,#ffcc00,#ff9900);color:#000000 !important;border-radius:10px;font-weight:700;font-size:16px;text-decoration:none;transition:all 0.3s ease;letter-spacing:0.5px;">
+                🛒 Buy Now on Amazon
+            </a>
+            <p class="small-note" style="color:#6a7290 !important;font-size:13px;margin-top:12px;">
+                Start your data journey today — Get your copy now!
+            </p>
+        </div>
+
+        <hr/>
+
+        <!-- ===== SHARE SECTION ===== -->
+        <div class="share-section">
+            <p>📤 Share this book recommendation with your network</p>
+            <div class="share-buttons">
+                <a href="#" onclick="window.open('https://twitter.com/intent/tweet?text=SQL%20for%20Beginners%20-%20Master%20SQL%20with%20a%20practical%2C%20hands-on%20approach!%20%23SQL%20%23Database%20%23DataAnalytics%20%23LearnToCode','_blank');return false;">
+                    🐦 Twitter
+                </a>
+                <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(window.location.href),'_blank');return false;">
+                    📘 Facebook
+                </a>
+                <a href="#" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(window.location.href),'_blank');return false;">
+                    💼 LinkedIn
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
